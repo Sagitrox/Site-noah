@@ -306,6 +306,13 @@ section h2 {
     margin: 0 auto 25px;
 }
 
+.project-content > .project-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    transform: translateY(10px);
+}
+
 .project-btn:hover {
     background-color: #6525d3;
 }
