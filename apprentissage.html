@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes notes et apprentissages en HTML, CSS, JavaScript, Python.">
+    <title>Mes apprentissages | Mon Blog Info</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Mon Blog Info</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#python">Python</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="learning-main">
+        <section class="learning-intro">
+            <p class="intro">Mes notes de développement</p>
+            <h2>Apprendre le <span>développement web</span></h2>
+            <p>
+                Retrouvez ici les notions que je découvre et les outils que j'utilise.
+                Choisissez un sujet pour accéder directement à sa section.
+            </p>
+
+            <nav class="topic-nav" aria-label="Choisir un sujet">
+                <a href="#html">Découvrir HTML</a>
+                <a href="#css">Découvrir CSS</a>
+                <a href="#javascript">Découvrir JavaScript</a>
+                <a href="#python">Découvrir Python</a>
+            </nav>
+        </section>
+
+        <section id="html" class="learning-topic">
+            <p class="topic-label">01 · Structure</p>
+            <h2>HTML : organiser le contenu</h2>
+            <p>
+                HTML est le langage de balisage qui décrit la structure d'une page.
+                Les balises donnent un sens au contenu : un titre, un paragraphe,
+                une navigation, une image ou un lien.
+            </p>
+            <h3>À retenir</h3>
+            <ul>
+                <li>Utiliser des titres dans un ordre logique, de <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code>.</li>
+                <li>Choisir des éléments sémantiques comme <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> et <code>&lt;footer&gt;</code>.</li>
+                <li>Décrire les images avec un texte alternatif pertinent dans <code>alt</code>.</li>
+            </ul>
+            <pre><code>&lt;section&gt;
+    &lt;h2&gt;Mon sujet&lt;/h2&gt;
+    &lt;p&gt;Une première explication.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+        </section>
+
+        <section id="css" class="learning-topic">
+            <p class="topic-label">02 · Présentation</p>
+            <h2>CSS : mettre en forme une page</h2>
+            <p>
+                CSS contrôle l'apparence des éléments HTML : couleurs, espacements,
+                tailles de texte et organisation de la page. Flexbox et Grid aident
+                à créer des mises en page qui s'adaptent à différents écrans.
+            </p>
+            <h3>À retenir</h3>
+            <ul>
+                <li>Un sélecteur cible les éléments à modifier.</li>
+                <li>Les règles responsive adaptent la mise en page aux petits écrans.</li>
+                <li>Les classes permettent de réutiliser un même style à plusieurs endroits.</li>
+            </ul>
+            <pre><code>.carte {
+    padding: 24px;
+    background-color: white;
+    display: grid;
+    gap: 12px;
+}</code></pre>
+        </section>
+
+        <section id="javascript" class="learning-topic">
+            <p class="topic-label">03 · Interactivité</p>
+            <h2>JavaScript : rendre une page interactive</h2>
+            <p>
+                JavaScript permet de réagir aux actions des visiteurs et de modifier
+                le contenu d'une page. On peut par exemple écouter un clic, vérifier
+                un formulaire ou afficher un élément à la demande.
+            </p>
+            <h3>À retenir</h3>
+            <ul>
+                <li>Une variable conserve une valeur avec <code>const</code> ou <code>let</code>.</li>
+                <li>Une fonction regroupe une action que l'on peut réutiliser.</li>
+                <li>Un événement, comme <code>click</code>, déclenche du code.</li>
+            </ul>
+            <pre><code>const bouton = document.querySelector("#mon-bouton");
+
+bouton.addEventListener("click", () =&gt; {
+    alert("Bonjour !");
+});</code></pre>
+        </section>
+
+        <section id="python" class="learning-topic">
+            <p class="topic-label">04 · Programmation</p>
+            <h2>Python : apprendre la logique du code</h2>
+            <p>
+                Python est un langage polyvalent apprécié pour sa syntaxe lisible.
+                Il peut servir à apprendre les bases de la programmation, automatiser
+                des tâches ou développer des applications côté serveur.
+            </p>
+            <h3>À retenir</h3>
+            <ul>
+                <li>Les variables stockent des informations.</li>
+                <li>Les conditions permettent de choisir quelles instructions exécuter.</li>
+                <li>Les boucles répètent une action et les fonctions organisent le programme.</li>
+            </ul>
+            <pre><code>nom = "Noah"
+
+if nom:
+    print(f"Bonjour, {nom} !")</code></pre>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h2>Droits d'auteur</h2>
+                <p>&copy; 2026 Noah Ost. Tous droits réservés.</p>
+            </div>
+            <ul class="copyright-details">
+                <li>Textes, design et développement : Noah</li>
+                <li>Images : utilisées dans le respect des droits de leurs auteurs</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

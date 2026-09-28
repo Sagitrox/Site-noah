@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon projet web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Mon Portfolio</h1>
+
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="apprentissage.html">Apprentissages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+
+    <div class="hero-content">
+        <p class="intro">Bonjour, moi c'est Noah 👋</p>
+
+        <h2>Étudiant en<br>
+            <span>Développement Web</span>
+        </h2>
+
+        <p>
+            Je découvre et développe mes compétences en HTML,
+            CSS et JavaScript.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projets" class="btn">Voir mes projets</a>
+            <a href="#contact" class="btn-secondary">Me contacter</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/profil.jpg" alt="Photo de profil">
+    </div>
+
+
+</section>
+
+        <section id="apropos" class="about">
+
+    <h2>À propos de moi</h2>
+
+    <p class="about-text">
+        Je m'appelle Noah et je suis étudiant en développement web.
+        Je développe actuellement mes compétences en HTML, CSS et JavaScript.
+        Mon objectif est d'apprendre à créer des sites web modernes,
+        responsives et fonctionnels.
+    </p>
+
+    <h3>Mes compétences</h3>
+
+    <div class="skills">
+
+        <div class="skill-card">
+            <h4>HTML</h4>
+            <p>
+                Création et organisation de la structure
+                d'une page web.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h4>CSS</h4>
+            <p>
+                Mise en page, couleurs, animations
+                et responsive design.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h4>JavaScript</h4>
+            <p>
+                Création d'interactions et de fonctionnalités
+                dynamiques.
+            </p>
+        </div>
+
+    </div>
+
+<section id="projets" class="projects">
+
+    <h2>Mes projets</h2>
+
+    <p class="projects-intro">
+        Voici quelques projets réalisés pendant mon apprentissage
+        du développement web.
+    </p>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/code.jpg" alt="Aperçu de mon portfolio">
+            </div>
+
+            <div class="project-content">
+                <h3>Mon Portfolio</h3>
+                <p>
+                    Mon premier portfolio réalisé avec HTML,
+                    CSS et JavaScript.
+                </p>
+                <div class="technologies">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="#" class="project-btn">Voir le projet</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/apprentissage.jpg" alt="Aperçu du projet Mon Blog Info">
+            </div>
+
+            <div class="project-content">
+                <h3>Projet en cours de développement</h3>
+                <p>
+                    Un nouveau projet sera bientôt disponible au public.
+                </p>
+                <div class="technologies">
+                    <span>En développement</span>
+                </div>
+            </div>
+            <a href="apprentissage.html" class="project-btn">Voir le projet</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Contact</h2>
+
+    <p class="contact-intro">
+        Vous avez une question ou souhaitez me contacter ?
+        Vous pouvez utiliser le formulaire ci-dessous.
+    </p>
+
+    <form
+    class="contact-form"
+    action="https://formspree.io/f/xoeqwgvb"
+    method="POST"
+    target="_blank"
+>
+
+        <div class="form-group">
+            <label for="name">Nom</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Votre nom"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="votre@email.com"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Votre message..."
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">
+            Envoyer le message
+        </button>
+
+    </form>
+
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h2>Droits d'auteur</h2>
+                <p>&copy; 2026 Noah Ost. Tous droits réservés.</p>
+            </div>
+
+            <ul class="copyright-details">
+                <li>Textes, design et développement : Noah</li>
+                <li>Images : utilisées dans le respect des droits de leurs auteurs</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
